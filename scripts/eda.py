@@ -47,25 +47,10 @@ st.write(data.isnull().sum())
 st.markdown('De acuerdo con lo anterior **no se cuentan con datos nulos**')
 
 st.markdown('### Deteccion de valores atipicos')
+st.markdown('En la siguiente tabla se muestran los principales indicadores estadisticos')
 st.write(data.describe())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+st.markdown('Ahora se muestra la correlacion de variables')
+st.write(data.corr())
 
 # Convertimos a hora la columna
 Matriz = np.array(data[['latitud', 'longitud', 'hora_creacion']])
