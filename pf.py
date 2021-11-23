@@ -40,11 +40,15 @@ st.markdown('La matriz de datos que se cargo tiene la siguiente forma, cabe menc
 st.write(data.shape)
 
 st.markdown('El tipo de dato que se tiene por columna')
-# st.write(data.dtypes)
+# st.write(data.dtypes) Pendiente error
 
 st.markdown('### Identifcación de datos faltantes')
 st.write(data.isnull().sum())
 st.markdown('De acuerdo con lo anterior **no se cuentan con datos nulos**')
+
+st.markdown('### Deteccion de valores atipicos')
+st.write(data.describe())
+
 
 
 
