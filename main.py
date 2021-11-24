@@ -5,18 +5,18 @@ import streamlit as st
 import awesome_streamlit as ast
 import scripts.acercade
 import scripts.edam
-import scripts.hola
+import scripts.acd
 
 PAGES = {
     "Acerca de": scripts.acercade,
     "Análsis Exploratorio de Datos": scripts.edam,
-    "Hola": scripts.hola,
+    "Seleccion de caracteristicas": scripts.acd,
 }
 
 def main():
     """Index"""
     st.sidebar.title("Menú")
-    selection = st.sidebar.radio("Ir a", list(PAGES.keys()))
+    selection = st.sidebar.radio("Seleccionar...", list(PAGES.keys()))
 
     st.sidebar.title("Contacto")
     st.sidebar.success("""
