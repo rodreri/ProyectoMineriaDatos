@@ -4,13 +4,26 @@ import streamlit as st
 
 import awesome_streamlit as ast
 import scripts.acercade
-import scripts.edam
+import scripts.eda
 import scripts.acd
+import scripts.pca
+import scripts.Cjerar
+import scripts.CKmeans
+import scripts.apriori
+import scripts.Aprono
+import scripts.Aclass
+
 
 PAGES = {
     "Acerca de": scripts.acercade,
-    "Análsis Exploratorio de Datos": scripts.edam,
+    "Análsis Exploratorio de Datos": scripts.eda,
     "Seleccion de caracteristicas": scripts.acd,
+    "Analsis de componentes principales": scripts.pca,
+    "Cluster jerarquico": scripts.Cjerar,
+    "Clusterizacion por K-Means": scripts.CKmeans,
+    "Reglas de asociacion": scripts.apriori,
+    "Pronostico por arboles": scripts.Aprono,
+    "Clasificacion por arboles": scripts.Aclass,
 }
 
 def main():
