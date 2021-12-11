@@ -15,9 +15,9 @@ import scripts.Aclass
 
 
 PAGES = {
-    "Acerca de": scripts.acercade,
-    "Análsis Exploratorio de Datos": scripts.eda,
-    "Seleccion de caracteristicas": scripts.acd,
+    "Acerca de": scripts.acercade,#R
+    "Análsis Exploratorio de Datos": scripts.eda,#R
+    "Seleccion de caracteristicas": scripts.acd,#R
     "Analsis de componentes principales": scripts.pca,
     "Cluster jerarquico": scripts.Cjerar,
     "Clusterizacion por K-Means": scripts.CKmeans,

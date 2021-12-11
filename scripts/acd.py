@@ -29,4 +29,15 @@ def write():
     st.markdown("## Evaluación Visual")
     st.pyplot(sns.pairplot(data, hue='delegacion_inicio'))
 
+    #Mapa de calor de correlaciones
+    fig, ax = plt.subplots()
+    sns.heatmap(data.corr(), ax=ax)
+    st.write(fig)
+
+    st.markdown("""
+      Tras un recorrido visual y despues de obtener el mapa de calor se van a eliminar algunas columnas que no tiene nada que ver
+    """)
+    Data2 = data.drop(['incidente_c4','folio','fecha_cierre','hora_cierre','ano_cierre','delegacion_cierre','clas_con_f_alarma','tipo_entrada','mes_cierre'], axis=1)
+    st.write(Data2)
+    Data2.to_csv('incid.csv')
     
