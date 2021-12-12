@@ -22,8 +22,8 @@ PAGES = {
     "Cluster jerarquico": scripts.Cjerar,
     "Clusterizacion por K-Means": scripts.CKmeans,
     "Reglas de asociacion": scripts.apriori,
-    "Pronostico por arboles": scripts.Aprono,
-    "Clasificacion por arboles": scripts.Aclass,
+    "Pronostico por arboles": scripts.Aprono,#Falta imprimir el arbol y meter prono
+    "Clasificacion por arboles": scripts.Aclass,#Falta imprimir el arbol y meter prono
 }
 
 def main():
