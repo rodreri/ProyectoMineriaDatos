@@ -20,8 +20,8 @@ PAGES = {
     "Seleccion de caracteristicas": scripts.acd,#R
     "Analsis de componentes principales": scripts.pca,
     "Cluster jerarquico": scripts.Cjerar,
-    "Clusterizacion por K-Means": scripts.CKmeans,
-    "Reglas de asociacion": scripts.apriori,
+    "Clusterizacion por K-Means": scripts.CKmeans,#R
+    "Reglas de asociacion": scripts.apriori,#Falta imprimir grafica
     "Pronostico por arboles": scripts.Aprono,#Falta imprimir el arbol y meter prono
     "Clasificacion por arboles": scripts.Aclass,#Falta imprimir el arbol y meter prono
 }
