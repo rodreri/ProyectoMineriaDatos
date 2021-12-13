@@ -22,7 +22,7 @@ def write():
 
       predecida = st.selectbox('Variable ...', columns_names)
       # st.write('You selected:', predecida)
-      #      st.pyplot(sns.pairplot(dataframe, hue=str(predecida)))
+      st.pyplot(sns.pairplot(dataframe, hue=str(predecida)))
 
       st.markdown("""
         Se muestra la correlacion con el metodo de pearson
@@ -113,7 +113,7 @@ def write():
       st.pyplot(fig)
 
       st.markdown("""
-      Es posible identificar los pacientes más cercanos a cada centroide
+      Es posible identificar los casos más cercanos a cada centroide
       """)
       #Es posible identificar los pacientes más cercanos a cada centroide
       Cercanos,_ = pairwise_distances_argmin_min(MParticional.cluster_centers_, MatrizVariables)

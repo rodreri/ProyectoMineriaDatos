@@ -19,7 +19,7 @@ PAGES = {
     "Análsis Exploratorio de Datos": scripts.eda,#R
     "Seleccion de caracteristicas": scripts.acd,#R
     "Analsis de componentes principales": scripts.pca,
-    "Cluster jerarquico": scripts.Cjerar,
+    "Cluster jerarquico": scripts.Cjerar,#R
     "Clusterizacion por K-Means": scripts.CKmeans,#R
     "Reglas de asociacion": scripts.apriori,#Falta imprimir grafica
     "Pronostico por arboles": scripts.Aprono,#Falta imprimir el arbol y meter prono
